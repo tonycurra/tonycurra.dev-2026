@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tools — QR code generator — Tony Currà</title>
+  <meta name="description" content="QR code generator. Paste a link, get a QR code. Download as SVG.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav>
+    <a href="../">home</a>
+    <a href="../services.html">services</a>
+    <a href="../about.html">about</a>
+    <a href="../contact.html">contact</a>
+  </nav>
+
+  <header>
+    <h1>Tools</h1>
+    <p class="tagline">QR code generator</p>
+    <p>Paste a link. Get a QR code.</p>
+  </header>
+
+  <main>
+    <label class="meta" for="qr-url">URL</label>
+    <input id="qr-url" type="text" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://">
+    <div id="qr-preview" class="qr-preview" hidden></div>
+    <p><a id="qr-download" class="button" hidden>Download SVG</a></p>
+
+    <details class="info">
+      <summary>How it works</summary>
+      <p>Paste a URL. A full one like https://example.com, or just example.com/page. If you skip https://, it is added.</p>
+      <p>The code is made in your browser. Nothing is uploaded.</p>
+      <p>Download is SVG, so it stays sharp if you print it large. High error correction, so it still scans if the print is a bit rough.</p>
+    </details>
+  </main>
+
+  <footer>
+    <p><a href="mailto:mail@tonycurra.dev">mail@tonycurra.dev</a></p>
+    <p class="sitemap">
+      <a href="../">home</a>
+      <a href="../services.html">services</a>
+      <a href="../about.html">about</a>
+      <a href="../work/">work</a>
+      <a href="../education.html">education</a>
+      <a href="./">tools</a>
+      <a href="../contact.html">contact</a>
+    </p>
+    <p>&copy; 2026 Tony Currà</p>
+  </footer>
+
+  <script src="qrcode.min.js"></script>
+  <script src="qr.js"></script>
+</body>
+</html>
